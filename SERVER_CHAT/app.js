@@ -23,6 +23,7 @@ io.sockets.on('connection', function(socket) {
 			console.log("username exist: " + data);
 		} else {
 			result = true;
+			socket.un = data;
 			usernames.push(data);
 			console.log("new username: " + data);
 		}
