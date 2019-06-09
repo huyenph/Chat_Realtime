@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         try {
-            socket = IO.socket("http://192.168.100.23:3000")
+            socket = IO.socket("http://192.168.0.106:3000")
         } catch (e: URISyntaxException) {
         }
 
